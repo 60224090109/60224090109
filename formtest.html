@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Test</title>
+        <script type="text/javascript">
+            function ShowPassword() {
+                var my_pwd = document.getElementById('mypwd');
+                var pwd = my_pwd.value;
+                var mb_number = document.getElementById('mnb').value;
+                alert("รหัสผ่าน : " + pwd + " เบอร์โทร : " + mb_number);
+            }
+        </script>
+    </head>
+
+
+<body>
+    <center><h2> แบบฟอร์มสมัครติวเตอร์ </h2></center>
+    <center>
+    <table>
+        <tr>
+            <td>
+                    <form action="/60224090109/test.php" method="post">
+                       
+                        ชื่อ : <br />
+                        <input type="text" name="name" placeholder="กรุณาพิมพ์ชื่อภาษาไทย" /><br>
+                        นามสกุล : <br />
+                        <input type="text" name="lastname" placeholder="กรุณาพิมพ์ชื่อภาษาไทย" /><br>
+
+                        เพศ : <br />
+                        <input type="radio" name="gender" value="male" checked> ชาย <br>
+                        <input type="radio" name="gender" value="female"> หญิง <br>
+
+                        วิชา : <br/>
+                        <select name = "subject">
+                        <option value = "คณิตศาสตร์"selected>Mathematics</option>
+                        <option value = "วิทยาศาสตร์" >Science</option>
+                        <option value = "อังกฤษ" >English</option>
+                        <option value = "ภาษาไทย" >Thai</option>
+                        </select> <br/>
+
+                        จังหวัด : <br/>
+                        <select name = "province">
+                        <option value = "กาญจนบุรี"selected>Kanchanaburi</option>
+                        <option value = "นครปฐม" >Nakhon Pathom</option>
+                        <option value = "ราชบุรี" >Ratchaburi</option>
+                        <option value = "สุพรรณบุรี" >Suphanburi</option>
+                        </select> <br />
+
+                        เบอร์โทร :<br />
+                        <input type="mobile_number" name="tel" /><br />
+
+                        ประสบการณ์ = <br/>
+                        <textarea rows="10" cols="100" name = "experience"></textarea>
+                        </br>
+                        <input type="submit" value="ส่งข้อมูล" />
+                        <input type="reset" value="เคลียร์" />
+                        </br />
+
+                    </form>
+            </td>
+        </tr>
+    </table>
+    </center>
+    
+</body>
+
+</html>
+<a href="http://localhost/60224090109/show.php">แสดงข้อมูลทั้งหมด</a>
+ 
+</body>
+
+</html>
